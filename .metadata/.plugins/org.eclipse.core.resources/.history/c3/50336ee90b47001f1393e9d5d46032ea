@@ -1,0 +1,78 @@
+package cys.gh.lessona11;
+
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class TCP_3_Server {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		try {
+			ServerSocket ss = new ServerSocket(1981);
+			while(true){
+				Socket s = ss.accept();
+				new Client(s).start();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+class Client extends Thread{
+	
+	private Socket s;
+	private DataOutputStream dos;
+	private DataInputStream dis;
+	private BufferedReader br;
+	
+	public Client(Socket s){
+		this.s=s;
+		try {
+			dos = new DataOutputStream(s.getOutputStream());
+			dis = new DataInputStream(s.getInputStream());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void run(){
+		this.recive();
+	}
+	
+	//向客户端发送信息
+	public void send(){
+		br = new BufferedReader( new InputStreamReader(System.in));
+		try {
+			while(true){
+				String str = br.readLine();//键盘就收信息
+				dos.writeUTF(str);//向客户端发送信息
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	//接收客户端信息
+	public void recive(){
+		try {
+			while(true){
+				System.out.println("客户端"+s.getInetAddress()+" say: "+dis.readUTF());
+				if("88".equals(dis.readUTF())){
+					break;
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}
+

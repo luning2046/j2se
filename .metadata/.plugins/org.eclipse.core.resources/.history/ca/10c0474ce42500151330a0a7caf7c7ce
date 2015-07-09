@@ -1,0 +1,22 @@
+package cys.gh.customClassLoader;
+
+import java.io.File;
+
+public class CustomClassLoader extends ClassLoader{
+
+	private String classDir;
+	
+	public CustomClassLoader(String classDir){
+		this.classDir = classDir;
+	}
+	
+	@Override
+	protected Class<?> findClass(String name) throws ClassNotFoundException {
+
+		String classFileName = classDir+"\\"+name+".class";
+		File f = new File(classFileName);
+		System.out.println(f.exists()+"--==================");
+		return super.findClass(classFileName);
+	}
+
+}

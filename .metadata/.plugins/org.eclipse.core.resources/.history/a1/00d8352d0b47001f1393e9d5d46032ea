@@ -1,0 +1,47 @@
+package cys.gh.lessona11;
+
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class TCP_3_Client {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		DataInputStream dis  = null;
+		DataOutputStream dos = null;
+		Socket s = null;
+		try {
+			s = new Socket("127.0.0.1",1981);
+			while(true){
+				dis = new DataInputStream(System.in);
+				dos = new DataOutputStream(s.getOutputStream());
+				
+					System.out.println(dis.readUTF());
+				
+				dos.writeUTF(dis.readUTF());
+				if(dis.readUTF().equals("88")){
+					break;
+				}
+			}
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				dos.close();
+				dis.close();
+				s.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

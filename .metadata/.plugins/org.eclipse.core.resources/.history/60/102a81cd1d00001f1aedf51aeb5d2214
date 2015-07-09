@@ -1,0 +1,28 @@
+package cys.gh.lesson4;
+/*
+ * 内部类访问外部类的成员的最简单例子
+ */
+public class Test1 {
+	public static void main(String[] args){
+		Outer1 o = new Outer1();
+		o.print();
+	}
+}
+class Outer1{
+	 private  int index=100;
+	 
+	 //内部类
+	 class Inner1{
+		 
+		 void print(){
+			 //内部类可以访问外部类的所有成员,包括private类型的和static类型的
+			 System.out.println(index);
+		 }
+	 }
+	 
+	 //外部类方法访问内部类对象及方法
+	 void print(){
+		 Inner1 i = new Inner1();
+		 i.print();
+	 }
+}

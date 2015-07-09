@@ -1,0 +1,25 @@
+package cys.gh.lesson8;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class TestArrayList_1 {
+
+	public static void main(String[] args){
+		List l = new ArrayList();
+		l.add("cys");
+		l.add("gh");
+		l.add("cyy");
+		System.out.println(l);//默认调用每个元素的toString方法将元素打印输出
+		
+		Object[] objs = l.toArray();//将List集合转换为一个数组
+		for(int i=0;i<objs.length;i++){
+			System.out.println(objs[i]);
+		}
+		
+		List l2 = Arrays.asList(objs);//将一个数组转换为集合
+		System.out.println(l2);//l2这个集合此时就是一个固定尺寸的集合  因此不能在往集合添加新的元素了
+		//l2.add("dfj"); 此句会产生运行期异常
+	}
+}

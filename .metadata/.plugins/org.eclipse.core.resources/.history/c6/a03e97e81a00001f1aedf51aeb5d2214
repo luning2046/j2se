@@ -1,0 +1,11 @@
+package cys.gh.lesson4;
+
+public class Bb {
+
+	static class Ac{
+		
+	}
+	public static void main(String[] args){
+		new Ac();
+	}
+}

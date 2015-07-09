@@ -1,0 +1,13 @@
+package cys.gh.regularExpression;
+
+import org.junit.Test;
+
+public class TestRegular {
+
+	@Test
+	public void test1(){
+		String str = "I am good Student";
+		boolean b = str.matches("\bam\b");
+		System.out.println(b);
+	}
+}

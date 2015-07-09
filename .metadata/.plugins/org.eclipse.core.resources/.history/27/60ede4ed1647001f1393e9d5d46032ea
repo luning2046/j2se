@@ -1,0 +1,13 @@
+package cys.gh.lessona11;
+
+public class UDP_5_Server {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

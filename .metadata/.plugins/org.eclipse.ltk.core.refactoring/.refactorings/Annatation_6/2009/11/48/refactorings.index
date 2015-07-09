@@ -1,0 +1,9 @@
+1259156295140	Rename package 'cys.gh.deprecated'
+1259156302625	Rename package 'cys.gh.override'
+1259156313406	Rename package 'cys.gh.suppressWarnings'
+1259161160578	Rename package 'cys.gh.definationAnnotation'
+1259161175125	Rename package 'cys.gh.useAnnotation'
+1259161260703	Rename type 'DefineAnnotation'
+1259161278953	Rename type 'UseAnnotion'
+1259161313812	Rename type 'AnnotionTest'
+1259166001984	Copy package

@@ -1,0 +1,18 @@
+package cys.gh.lesson9;
+
+public class SystemInOut_3 {
+
+	/**
+	 * System类中的out 对象 就是一个printStream（过滤流） 类型
+	 * System类中的in 对象 就是一个inputStream 类型
+	 */
+	//从标准输入设备键盘中输入内容，再标准输出设备屏幕上输出
+	public static void main(String[] args) throws Exception{
+		int data;
+		while((data=System.in.read())!=-1){
+			System.out.write(data);
+		}
+		
+	}
+
+}

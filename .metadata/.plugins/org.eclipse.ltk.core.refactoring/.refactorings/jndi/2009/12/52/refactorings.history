@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 1 elements(s) to &apos;jndi/src/xyz.jndi&apos;&#x0D;&#x0A;- Original project: &apos;jndi&apos;&#x0D;&#x0A;- Destination element: &apos;jndi/src/xyz.jndi&apos;&#x0D;&#x0A;- Original element: &apos;JNDIContainer.properties&apos;" description="Move file" destination="/src&lt;xyz.jndi" element1="src/JNDIContainer.properties" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1261387348515" units="0" version="1.0"/>
+</session>

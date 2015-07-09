@@ -1,0 +1,60 @@
+package cys.gh.lesson9;
+
+import java.io.File;
+import java.io.IOException;
+
+public class TestFile1 {
+
+	public static void main(String[] args) throws IOException{
+		File file = new File("1.txt");//相对路径，表示在当前路径下指定一个文件,并创建
+		file.createNewFile();
+		
+		File file2 = new File("aa");//相对路径，表示在当前路径下指定一个目录（文件夹）,并创建
+		file2.mkdir();
+		
+		//此方式得用绝对路径，表示在当前路径下指定一个目录（文件夹）和一个文件,并创建
+		File file3 = new File("d://bb","bb.txt");
+		file3.createNewFile();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

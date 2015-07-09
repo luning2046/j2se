@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;cys.gh.Client&apos; to &apos;T_Singleton&apos;&#x0D;&#x0A;- Original project: &apos;1_Singleton&apos;&#x0D;&#x0A;- Original element: &apos;cys.gh.Client&apos;&#x0D;&#x0A;- Renamed element: &apos;cys.gh.T_Singleton&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Client&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;cys.gh{Client.java[Client" matchStrategy="1" name="T_Singleton" qualified="false" references="true" similarDeclarations="true" stamp="1264355714890" textual="false" version="1.0"/>
+</session>

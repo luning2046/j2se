@@ -1,0 +1,27 @@
+package cys.gh.lesson4;
+
+/*
+ * 如何在其他类中访问内部类呢？ ---通过外部类的方法获得内部类的一个对象
+ */
+public class Test3_1 {
+	public static void main(String[] args){
+		//在其他类中通过外部类的方法获得内部类的一个对象
+		Outer3_1.Inner3_1 inner3_1 = new Outer3_1().getInner3_1();
+		inner3_1.print();
+	}
+}
+class Outer3_1{
+	 private  int index=100;
+	 
+	 //内部类
+	 class Inner3_1{
+		 void print(){
+			 System.out.println(index);//访问外部类的成员变量
+		 }
+	 }
+	
+	 //外部类的方法，功能是 返回一个内部的对象
+	 public Inner3_1 getInner3_1(){
+		 return new Inner3_1();
+	 }
+}

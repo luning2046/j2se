@@ -1,0 +1,10 @@
+类加载器
+
+在cys.gh.customClassLoader中 实现了自定义类加载
+步骤
+  1.CustomClassLoader是自定义的类加载器
+  2.ClassLoaderAttachement是被加载的类
+         要把这个类在E:\workspace\j2se\classLoader\bin\cys\gh\customClassLoader目录下
+         生成的字节码删除（否则 会被AppClassLoader类加载器所加载），并将此将此字节码放入
+         自定义的目录E:\workspace\j2se\classLoader\storeClassDir中
+ 

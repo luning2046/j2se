@@ -1,0 +1,10 @@
+#Thu Dec 17 16:50:08 CST 2009
+TOMCAT_HOME=D\:\\tomcat-6.0.20
+TOMCAT_TEMP=D\:\\tomcat-6.0.20\\temp
+LIBRARY_PATH="D\:\\jdk1.6\\bin;D\:\\tomcat-6.0.20\\bin"
+TOMCAT_BASE=D\:\\tomcat-6.0.20
+ENDORSED_DIRS="D\:\\tomcat-6.0.20/common/endorsed"
+eclipse.preferences.version=1
+JDK_INSTALLATION_NAME=jdk1.6
+JDK_HOME=D\:\\jdk1.6
+SERVER_ENABLEMENT=true

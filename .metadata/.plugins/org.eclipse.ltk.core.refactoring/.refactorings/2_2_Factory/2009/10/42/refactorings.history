@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 elements(s) to &apos;JDBC/src/cys.gh.ORM5&apos;&#x0D;&#x0A;- Original project: &apos;factory&apos;&#x0D;&#x0A;- Destination element: &apos;JDBC/src/cys.gh.ORM5&apos;&#x0D;&#x0A;- Original element: &apos;cys.gh.domain.User.java&apos;" description="Copy compilation unit" destination="/src&lt;cys.gh.ORM5" element1="/src&lt;cys.gh.domain{User.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" log="/src&lt;cys.gh.domain{User.java&#x09;true&#x09;false" policy="org.eclipse.jdt.ui.copyResources" stamp="1255248413000" units="1" version="1.0"/>
+</session>

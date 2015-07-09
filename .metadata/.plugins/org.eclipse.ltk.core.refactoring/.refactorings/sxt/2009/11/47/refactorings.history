@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 package(s) to &apos;regular/src&apos;&#x0D;&#x0A;- Original project: &apos;尚学堂&apos;&#x0D;&#x0A;- Destination element: &apos;regular/src&apos;&#x0D;&#x0A;- Original element: &apos;尚学堂/src/cys.gh.regularExpression&apos;" description="Copy package" destination="/src" element1="/src&lt;cys.gh.regularExpression" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" log="/src&lt;cys.gh.regularExpression&#x09;true&#x09;false" policy="org.eclipse.jdt.ui.copyPackages" stamp="1258532210046" version="1.0"/>
+</session>

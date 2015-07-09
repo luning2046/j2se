@@ -1,0 +1,13 @@
+package cys.gh.customClassLoader;
+
+import java.util.Date;
+
+public class Client {
+
+	public static void main(String[] args) {
+
+		CustomClassLoader ccl = new CustomClassLoader("storeClassDir");
+		Date d = (Date)ccl.loadClass("ClassLoaderAttachement");
+	}
+
+}

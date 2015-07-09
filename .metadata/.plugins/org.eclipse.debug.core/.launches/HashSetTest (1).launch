@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Fan_Xing_7/src/cys/gh/parentFX_4/HashSetTest.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="cys.gh.parentFX_4.HashSetTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Fan_Xing_7"/>
+</launchConfiguration>

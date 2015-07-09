@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 package(s) to &apos;孙鑫/src&apos;&#x0D;&#x0A;- Original project: &apos;Reflect&apos;&#x0D;&#x0A;- Destination element: &apos;孙鑫/src&apos;&#x0D;&#x0A;- Original element: &apos;Reflect/src/cys.gh.sunxin.lesson6&apos;" description="Copy package" destination="/src" element1="/src&lt;cys.gh.sunxin.lesson6" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" log="/src&lt;cys.gh.sunxin.lesson6&#x09;true&#x09;false" policy="org.eclipse.jdt.ui.copyPackages" stamp="1257069262609" version="1.0"/>
+</session>

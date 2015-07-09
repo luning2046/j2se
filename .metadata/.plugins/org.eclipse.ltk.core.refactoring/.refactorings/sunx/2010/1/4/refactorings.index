@@ -1,0 +1,38 @@
+1263724581437	Copy compilation unit
+1263733165281	Rename type 'TestHashSet'
+1263734488171	Rename type 'TestTreeSet_5'
+1263735591140	Rename type 'TestHashMap'
+1263738618296	Copy compilation unit
+1263738956015	Move file
+1263739005609	Move file
+1263820636828	Rename type 'T_1_1_File'
+1263820655953	Move compilation unit
+1263821342953	Rename type 'SystemInOut_3'
+1263821884703	Move compilation unit
+1263821900171	Rename type 'TestByte_4'
+1263822099218	Move compilation unit
+1263822124078	Rename type 'FileInOutputStream_5'
+1263822370250	Move compilation unit
+1263822396343	Rename type 'BufferedInOutputStream_6'
+1263822417671	Move compilation unit
+1263822434359	Rename type 'DataInOutputStream_7'
+1263823378781	Rename type 'T_7_PipeInOutputStream'
+1263825434984	Move compilation unit
+1263825452515	Rename type 'PrintStreamTest_8'
+1263825477062	Move compilation unit
+1263825496609	Rename type 'OutputStreamWriterTest_9'
+1263827525046	Move compilation unit
+1263827559437	Rename type 'SystemInOutByWriterOrReader_10'
+1263827603203	Rename type 'T_10_SystemInOutByWriterOrReader'
+1263827621906	Rename type 'T_9_1_SystemInOutByWriterOrReader'
+1263827633250	Rename type 'T_9_OutputStreamWriterTest'
+1263827646984	Rename type 'T_9_2_OutputStreamWriterTest'
+1263907309953	Move compilation unit
+1263907334421	Rename type 'CurrentSystemProperties'
+1263907396421	Move compilation unit
+1263907426531	Rename type 'T_10_CurrentSystemProperties'
+1263907439765	Rename type 'T_CurrentSystemProperties10'
+1263907452750	Rename type 'TestCharSet11'
+1263907567421	Delete element
+1263972291093	Delete element
+1263972962171	Delete element

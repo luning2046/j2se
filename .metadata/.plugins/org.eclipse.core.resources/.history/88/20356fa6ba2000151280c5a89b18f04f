@@ -1,0 +1,10 @@
+package cys.gh.socket;
+
+public class TestInetAddress {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

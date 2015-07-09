@@ -1,0 +1,8 @@
+package cys.gh.lesson1;
+
+public class Testjj {
+
+	public static void main(String[] args) {
+		System.out.println("aaaa/nfjfff");
+	}
+}

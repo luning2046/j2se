@@ -1,0 +1,22 @@
+#Thu Dec 17 14:28:50 CST 2009
+tomcat6Server.aa.isUptoDate=true
+tomcat6Server.ConnectionPool.type=WebDeployment
+tomcat6Server.aa.type=WebDeployment
+tomcat6Server.ConnectionPool.deploymentPath=E\:\\Tomcat 6.0\\webapps\\ConnectionPool
+tomcat6Server.ConnectionPool.isDeployed=true
+tomcat6Server.aa.shouldOverwrite=false
+tomcat6Server.ConnectionPool.shouldBackup=false
+tomcat6Server.aa.isExploded=true
+tomcat6Server.ConnectionPool.isUptoDate=true
+eclipse.preferences.version=1
+tomcat6Server.ConnectionPool.deployIsOverProject=false
+tomcat6Server.ConnectionPool.contextRoot=/ConnectionPool
+tomcat6Server.aa.contextRoot=/aa
+tomcat6Server.aa.shouldBackup=false
+tomcat6Server.aa.deploymentPath=D\:\\tomcat-6.0.20\\webapps\\aa
+tomcat6Server.aa.deployIsOverProject=false
+tomcat6Server.ConnectionPool.earProjectName=
+tomcat6Server.aa.isDeployed=true
+tomcat6Server.ConnectionPool.shouldOverwrite=false
+tomcat6Server.ConnectionPool.isExploded=true
+tomcat6Server.aa.earProjectName=

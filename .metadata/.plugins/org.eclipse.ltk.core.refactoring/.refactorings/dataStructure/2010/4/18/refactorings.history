@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;cys.gh.array.ArrayObject&apos; to &apos;_1_ArrayObject&apos;&#x0D;&#x0A;- Original project: &apos;dataStructure&apos;&#x0D;&#x0A;- Original element: &apos;cys.gh.array.ArrayObject&apos;&#x0D;&#x0A;- Renamed element: &apos;cys.gh.array._1_ArrayObject&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ArrayObject&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;cys.gh.array{ArrayObject.java[ArrayObject" matchStrategy="1" name="_1_ArrayObject" qualified="false" references="true" similarDeclarations="true" stamp="1272649250203" textual="false" version="1.0"/>
+</session>

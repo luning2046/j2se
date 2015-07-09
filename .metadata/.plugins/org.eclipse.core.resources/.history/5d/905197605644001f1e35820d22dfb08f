@@ -1,0 +1,10 @@
+package gh.cys;
+
+import cys.gh.Papa;
+
+public class Piapia extends Papa{
+
+	public void say(){
+		super.diao;
+	}
+}
