@@ -1,0 +1,1 @@
+要把mysql的jar包拷贝到E:\Tomcat 6.0\lib目录下

@@ -1,0 +1,8 @@
+package cys.gh.implements_6;
+
+public interface Parent<T1,T2> {
+
+	public void setFoo1(T1 t1);
+	public void setFoo2(T2 t2);
+	
+}

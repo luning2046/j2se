@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="java.net.URL+URLConnection"
+  id="myeclipse.1261030126984"
+  context-root="/java.net.URL+URLConnection"
+  j2ee-spec="1.4"
+  archive="java.net.URL+URLConnection.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

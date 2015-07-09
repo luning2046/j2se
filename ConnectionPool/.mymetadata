@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ConnectionPool"
+  id="myeclipse.1247838730125"
+  context-root="/ConnectionPool"
+  j2ee-spec="1.4"
+  archive="ConnectionPool.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
