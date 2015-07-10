@@ -18,6 +18,7 @@ public class SecurityHandler implements InvocationHandler {
 					this//实现了InvocationHandler接口的对象
 				);
 	}
+	
 	//在静态代理类中的每个方法前都有一个额外的方法 ，在东态代理则在每个方法之前调用此方法
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
@@ -33,6 +34,7 @@ public class SecurityHandler implements InvocationHandler {
 		}
 		return returnValue;//将返回值返回给目标对象
 	}
+	
 	//需要额外添加的方法
 	public void checkSecurity(){
 		System.out.println("-----------checkSecurity--------------");

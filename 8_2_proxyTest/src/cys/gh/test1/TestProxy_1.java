@@ -21,7 +21,7 @@ public class TestProxy_1 {
 		//查看这个动态生成的类的构造方法
 		Constructor[] cs = clazz.getConstructors();
 		for(Constructor c : cs){
-			System.out.println("构造方法名"+c.getName());//构造方法名  输出结果可以看是只有一个由参的构造方法
+			System.out.println("构造方法名"+c.getName());//构造方法名  输出结果可以看出这个类只有一个参数的构造方法
 			
 			//构造方法参数类型
 			Class[] cps = c.getParameterTypes();

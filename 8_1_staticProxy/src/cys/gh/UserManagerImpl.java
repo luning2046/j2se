@@ -4,20 +4,20 @@ package cys.gh;
  * 进行一下安全性的检查 用一个静态的代理类实现此功能 更好一些没。
  */
 public class UserManagerImpl implements UserManager{
-
+	@Override
 	public void add(String name, String password) {
 		System.out.println("--------UserManagerImpl.add--------");
 	}
-
+	@Override
 	public void delete(int id) {
 		System.out.println("--------UserManagerImpl.delete--------");
 	}
-
+	@Override
 	public String get(int id) {
 		System.out.println("--------UserManagerImpl.get--------");
 		return null;
 	}
-
+	@Override
 	public void update(int id) {
 		System.out.println("--------UserManagerImpl.update--------");
 	}
