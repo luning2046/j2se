@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
  *    							 再次 当一个m处理完自己的任务后，就wait，此时c监控到这个wait线程，同时任务
  *    								队列中还有任务，那么c就再取出一个任务，同时notify这个线程来处理这个任务直到任务队列为null了 
  */
-public class T1_ThreadPoolTest {
+public class T01_ThreadPoolTest {
 
 	/**
 	 * @param args
@@ -35,7 +35,6 @@ public class T1_ThreadPoolTest {
 						try {
 							Thread.sleep(20);
 						} catch (InterruptedException e) {
-							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
 						System.out.println(Thread.currentThread().getName() + " is looping of " + j + " for  task of " + task);
@@ -43,7 +42,7 @@ public class T1_ThreadPoolTest {
 				}
 			});
 		}
-		System.out.println("all of 10 tasks have committed! ");
+		System.out.println("all of 10 tasks have committed! ");//执行完此句后，主线程结束，但进程还没有结束。因为线程池中线程还存活着呢！
 //		threadPool.shutdownNow();//执行到此句后，立刻关闭线程此，不管任务是否处理完毕
 //		threadPool.shutdown();//线程池中所有任务处理完毕了，关闭线程池
 //====================================================================================================		
@@ -54,9 +53,9 @@ public class T1_ThreadPoolTest {
 //					System.out.println("bombing!");
 //					
 //				}},
-//				6,
+//				6,//单位是秒
 //				2,
-//				TimeUnit.SECONDS);//单位  秒 、毫秒
+//				TimeUnit.SECONDS);//单位  秒 、毫秒  系统默认是毫秒   使用这个就可指定单位
 	}
 
 }

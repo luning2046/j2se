@@ -1,12 +1,14 @@
-package cys.gh.lesson7;
+package cys.gh.lesson7.concurrent;
+
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 /*
- * V_eConsumerProducer_7_3就是解决了V_eConsumerProducer_7_1所产生的问题
- * 解决方法就是将V_eConsumerProducer_7_1中的
- * 	1.if语句换为while语句
- *  2.将notify变成nofigyAll   notity不能唤醒一个指定的等待线程，只是在多个等待线程
- *  		中随机由jvm选定。后期jdk5.0中concurrent包中提供了类似的功能
+ *本例与 V_eConsumerProducer_7_3功能完全一致
+ *只是使用condition新方式代替了wait和notify
  */
-public class V_eConsumerProducer_7_3 {
+public class T06_ConditionCommunication {
 
 	public static void main(String[] args){
 		Queue2 q = new Queue2();
@@ -26,33 +28,41 @@ class Queue2{
 	int value;
 	boolean bFull=false;
 	int index = 0;
+	Lock lock = new ReentrantLock();
+	Condition condition = lock.newCondition();
 	
-	public synchronized void put() {
-		
+	public  void put() {
+		lock.lock();
 		while(bFull){//不为空  则等待不往容器放产品
-			try {wait();} catch (InterruptedException e) {e.printStackTrace();}
+			try {
+				condition.await();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}
 		
 		value=index++;
 		bFull=true;
 		System.out.println(Thread.currentThread().getName()+"    生成了第"+value+"个产品==");
-		notifyAll();
-		
+		condition.signalAll();
+		lock.unlock();
 	}
 	
 	
-	public synchronized void get(){
+	public  void get(){
+		lock.lock();
 		while(!bFull){
 			try {
-				wait();
+				condition.await();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 		}
 		
 		bFull=false;
-		notifyAll();
+		condition.signalAll();
 		System.out.println(Thread.currentThread().getName()+"   。。。。消费了第"+value+"个产品");
+		lock.unlock();
 	}
 }
 //生产者

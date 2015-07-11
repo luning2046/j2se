@@ -3,7 +3,7 @@ package cys.gh.lesson7;
  * V_eConsumerProducer_7_2就是在V_eConsumerProducer_7_1基础上开启多个生产者和消费者
  * 多个生产者和多个消费者是有个问题的，一旦开启多余两个线程执行代码，就会产生线程安全问题
  * 		具体问题的描述在代码中，造成这个问题的一个原因就是，不能唤醒指定线程
- * 此代码就是解决此问题    
+ * 此代码并不是解决此问题，而是分析发生此问题的原因，V_eConsumerProducer_7_3才是解决此问题的代码    
  * 解决方法就是将V_eConsumerProducer_7_1中的
  * 	1.if语句换为while语句
  *  2.将notify变成nofigyAll   notity不能唤醒一个指定的等待线程，只是在多个等待线程

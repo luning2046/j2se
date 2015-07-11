@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 
 
-public class T2_CallableAndFuture {
+public class T02_CallableAndFuture {
 
 	/**
 	 * 线程执行完毕后 能产生一个返回值 给启用这个线程的代码
@@ -20,10 +20,13 @@ public class T2_CallableAndFuture {
 	public static void main(String[] args) {
 		ExecutorService threadPool =  Executors.newSingleThreadExecutor();
 		Future<String> future =
-			threadPool.submit(//提交一个任务，获得返回值
-				new Callable<String>() {
-					public String call() throws Exception {
-						Thread.sleep(2000);
+			threadPool.submit(//提交一个任务，获得返回值，和execute方法相同都是提交一个任务
+				new Callable<String>() {//这个泛型值与Future的泛型值一致
+					public String call() throws Exception {//这个方法里面的代码就是任务代码
+						for(int i=0;i<10;i++){
+							Thread.sleep(1000);
+							System.out.println("===========");
+						}
 						return "hello";
 					};
 				}

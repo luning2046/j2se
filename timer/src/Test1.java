@@ -1,6 +1,4 @@
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -14,13 +12,14 @@ public class Test1 {
 	 */
 	public static void main(String[] args) {
 		Timer t = new Timer();
-		t.schedule(new Task(){
+		t.schedule(new TimerTask(){
 			public void run() {
 				Date d = new Date();
 				System.out.println(Thread.currentThread().getName()+"=="+d);
 			}
 		},
 		2000);//两秒后  执行一次任务Task.
+//		t.cancel();
 	}
 }
 

@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 先各自从家出发到公司集合后，再同时出发到公园游玩，在指定地点集合后再同时开始就餐，…
  *
  */
-public class T8_CyclicBarrierTest {
+public class T08_CyclicBarrierTest {
 
 	public static void main(String[] args) {
 		ExecutorService service = Executors.newCachedThreadPool();

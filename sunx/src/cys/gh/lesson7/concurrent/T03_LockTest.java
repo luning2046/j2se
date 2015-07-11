@@ -4,7 +4,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 
-public class T3_LockTest {
+public class T03_LockTest {
 
 	/**
 	 * Lock&Condition实现线程同步通信
@@ -12,74 +12,46 @@ public class T3_LockTest {
 	 * 两个线程执行的代码片段要实现同步互斥的效果，它们必须用同一个Lock对象
 	 */
 	public static void main(String[] args) {
-		new T3_LockTest().init();
+		new T03_LockTest().init();
 	}
 	
 	private void init(){
 		final Outputer outputer = new Outputer();
-		new Thread(new Runnable(){
+		new Thread(new Runnable(){//第一个线程
 			@Override
 			public void run() {
 				while(true){
-					try {
-						Thread.sleep(10);
-					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
+					try {Thread.sleep(10);} catch (InterruptedException e) {e.printStackTrace();}
 					outputer.output("zhangxiaoxiang");
 				}
-				
 			}
 		}).start();
 		
-		new Thread(new Runnable(){
+		new Thread(new Runnable(){//第二个线程
 			@Override
 			public void run() {
 				while(true){
-					try {
-						Thread.sleep(10);
-					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
+					try {Thread.sleep(10);} catch (InterruptedException e) {e.printStackTrace();}
 					outputer.output("lihuoming");
 				}
-				
 			}
 		}).start();
-		
 	}
 
 	static class Outputer{
 		Lock lock = new ReentrantLock();
+		
 		public void output(String name){
 			int len = name.length();
-			lock.lock();
+			lock.lock();//加锁
 			try{
 				for(int i=0;i<len;i++){
 					System.out.print(name.charAt(i));
 				}
 				System.out.println();
 			}finally{
-				lock.unlock();
+				lock.unlock();//解锁      lock要求加锁后  一定要解锁
 			}
 		}
-		
-		public synchronized void output2(String name){
-			int len = name.length();
-			for(int i=0;i<len;i++){
-					System.out.print(name.charAt(i));
-			}
-			System.out.println();
-		}
-		
-		public static synchronized void output3(String name){
-			int len = name.length();
-			for(int i=0;i<len;i++){
-					System.out.print(name.charAt(i));
-			}
-			System.out.println();
-		}	
 	}
 }
