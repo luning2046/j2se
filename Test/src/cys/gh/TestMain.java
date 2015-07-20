@@ -3,17 +3,18 @@ package cys.gh;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class TestMain {
+public class TestMain extends EE implements DD{
 
 	public static void main(String[] args) throws Exception {
-		InputStream in = System.in;
-		while(true){
-			int buf1 = in.read();
-			System.out.println(buf1);
-		}
-
-//		int buf2 = in.read();
-//		System.out.println(buf2);
+		
 	}
 
+}
+
+interface DD{
+	void cc();
+}
+
+class EE{
+	public void cc(){}
 }

@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 具体主题角色
- * @author Administrator
- *
+ * 具体主题角色  也就是被观察者   相当于 一个button
  */
 public class ConcreteWatched implements Watchered{
 
@@ -22,7 +20,7 @@ public class ConcreteWatched implements Watchered{
 	}
 	
 	@Override
-	public void nofifyWatcher(String str) {
+	public void nofifyWatcher(String str) {//
 		for(Watcher watcher : watchers){
 			watcher.update(str);
 		}
